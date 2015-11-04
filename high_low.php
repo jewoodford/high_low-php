@@ -4,13 +4,13 @@
 		fwrite(STDOUT, 'Guess ');
 		$guess = fgets(STDIN);
 		if ($randomNumber > $guess) {
-			fwrite(STDOUT, Higher)
+			fwrite(STDOUT, 'Higher' . PHP_EOL);
 		}
 		if ($randomNumber < $guess) {
-			fwrite(STDOUT, Lower)
+			fwrite(STDOUT, 'Lower' . PHP_EOL);
 		}
 		if ($randomNumber == $guess) {
-			fwrite(STDOUT, Correct)
+			fwrite(STDOUT, 'Correct' . PHP_EOL);
 		}
-	} while ($guess != $randomNumber)
+	} while ($guess != $randomNumber);
 ?>
